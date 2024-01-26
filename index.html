@@ -75,6 +75,25 @@
         .footer-bg {
             background: linear-gradient(270deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 137, 56, 0.10) 100%);
         }
+
+        .right-arrow {
+            background: var(--Linear, linear-gradient(270deg, #F00 0%, #FF8938 100%));
+        }
+
+        .get-started-bg {
+            border-radius: 8px;
+            background: var(--Linear, linear-gradient(270deg, #F00 0%, #FF8938 100%));
+        }
+
+        .show-all-text-color {
+            background: var(--Linear, linear-gradient(270deg, #F00 0%, #FF8938 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-color: white;
+
+
+        }
     </style>
 
 
@@ -82,11 +101,11 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col-reverse lg:flex-row-reverse justify-between">
+    <header class="container mx-auto mt-16 sm:px-4">
+        <div class="">
+            <div class="flex justify-between flex-col-reverse lg:flex-row-reverse">
                 <div>
-                    <img src="images/banner.png" class="max-w-sm" />
+                    <img src="images/banner.png" class="" />
                     <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-4 w-60">
                         <div>
                             <img src="images/Star.png" alt="">
@@ -100,7 +119,7 @@
                 </div>
 
                 <div>
-                    <h1 class="text-[5rem] font-extrabold text-[#1C1C1C]">It's good<br>tea time at The Tea House</h1>
+                    <h1 class="text-[5rem] font-extrabold text-[#1C1C1C]">It's good<br>tea time at The<br>Tea House</h1>
                     <p class="py-6 text-[1.125rem] font-medium text-[#777]">Tea and Botanical Solutions Supplier Give
                         Optimum<br>Satisfaction To Your Taste Buds.</p>
                     <button class="btn btn-primary">Get Started</button>
@@ -108,9 +127,9 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto mt-24">
+    <main class="container lg:mx-auto mt-24">
         <!-- featured section -->
-        <section class="text-center">
+        <section class="text-center sm:px-4">
             <h2 class="text-[2.81rem] text-[#1C1C1C] font-extrabold">Our Featured Products</h2>
             <p class="text-[#777] text-[1rem] font-medium mt-5 mb-12">There are many variations of passages of Lorem
                 Ipsum
@@ -175,16 +194,19 @@
                 <div class="box-bg-2 h-36"></div>
             </div>
             <div class="space-y-5 flex-1">
-                <h2 class="text-[#1C1C1C] text-[2.81rem] font-extrabold">Great Tea, Freshly<br>Presented</h2>
-                <p class="text-[1rem] text-[#777] font-medium">The meaning of gong cha is chanese is to provide the best
+                <h2 class="text-[#1C1C1C] text-[2.81rem] font-extrabold px-4 lg:px-0">Great Tea, Freshly<br>Presented
+                </h2>
+                <p class="text-[1rem] text-[#777] font-medium px-4 lg:px-0">The meaning of gong cha is chanese is to
+                    provide the best
                     tea to emperor from all possessions . It represents the highest quality and self expectation.
                     Establishing in 2006, Gong cha had been deeply appreciated by its custoers because of good words of
                     mouth and unique customized service orginated from Taiwan.</p>
-                <h3 class="text-[#1C1C1C] text-[1.25rem] font-extrabold">Unique Taste</h3>
+                <h3 class="text-[#1C1C1C] text-[1.25rem] font-extrabold px-4 lg:px-0">Unique Taste</h3>
                 <p class="text-[1rem] text-[#777] font-medium">A Unique and different style from other teapots gives a
                     luxurious and minimalist impression</p>
-                <h3 class="text-[#1C1C1C] text-[1.25rem] font-extrabold">Premium Quality</h3>
-                <p class="text-[1rem] text-[#777] font-medium">Premium Quality that makes tea more elegant and more
+                <h3 class="text-[#1C1C1C] text-[1.25rem] font-extrabold px-4 lg:px-0">Premium Quality</h3>
+                <p class="text-[1rem] text-[#777] font-medium px-4 lg:px-0">Premium Quality that makes tea more elegant
+                    and more
                     durable when you use it.</p>
 
             </div>
@@ -200,7 +222,7 @@
                         available, but the majority have suffered alteration in some form, by injected humour,or
                         randomised
                         words which don't look even slightly believable. </p>
-                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn text-[1.25rem] font-bold show-all-text-color">Show All</button>
                 </div>
             </div>
             <!-- Review container -->
@@ -257,8 +279,8 @@
                 <img src="images/cup.png" alt="">
             </div>
             <div class="flex items-center gap-10">
-                <p class="text-[1.25rem] text-[#494949] font-medium">Ready to get strated?</p>
-                <button class="btn btn-primary">Get Started</button>
+                <p class="text-[1.25rem] text-[#494949] font-medium">Ready to get started?</p>
+                <button class="btn get-started-bg">Get Started</button>
             </div>
 
 
@@ -285,14 +307,13 @@
                 <a class="link link-hover">Cookie policy</a>
             </nav>
             <form>
-                <h6 class="footer-title">Newsletter</h6>
+                <h6 class="text-[#1C1C1C] text-[1.5rem] font-semibold mb-12">Subscribe to our<br>newsletter</h6>
                 <fieldset class="form-control w-80">
-                    <label class="label">
-                        <span class="label-text">Enter your email address</span>
-                    </label>
+
                     <div class="join">
-                        <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
-                        <button class="btn btn-primary join-item">Subscribe</button>
+                        <input type="text" placeholder="Email address"
+                            class="bg-transparent border-b-2 border-[#494949] outline-none py-6 w-64" />
+                        <button class="btn rounded-full right-arrow"><img src="images/right arrow.png" alt=""></button>
                     </div>
                 </fieldset>
             </form>
